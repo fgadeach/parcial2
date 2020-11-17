@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ConcertModule } from './concert/concert.module';
+import { PatrocinadoresModule } from './patrocinadores/patrocinadores.module';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ConcertModule,
+    PatrocinadoresModule,
     HttpClientModule
   ],
   providers: [],
