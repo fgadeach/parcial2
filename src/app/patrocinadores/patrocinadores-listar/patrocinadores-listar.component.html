@@ -9,9 +9,17 @@
         <div class="media-body">
           <h5 class="mt-0">{{c.name}}</h5>
           {{c.sponsorship}}
+
         </div>
-      </div>
-     </td>
+        <a href="#" class="btn btn-primary"(click)="onSelected(c)">Ver detail</a>
+        </div>
+      </td>
    </tbody>
  </table>
+ <div class="col" >
+  <h2 style="font-weight: bold; padding-bottom: 5px">detail del contacto</h2>
+<div *ngIf="selected">
+  <app-patrocinadores-detail [patrocinadorDetail]="patrocinadorSeleccionado"></app-patrocinadores-detail>
+</div>
+</div>
 

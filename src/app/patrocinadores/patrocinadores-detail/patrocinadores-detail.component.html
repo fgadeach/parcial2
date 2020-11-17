@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <table>
+    <td>
+      <div class="container-fluid">
+        <img
+          class="img-fluid"
+          src="{{ patrocinadorDetail.image }}"
+          style="width: 80px"
+        />
+      </div>
+    </td>
+    <td>
+      <p class="h3 p-3">{{ patrocinadorDetail.name }}</p>
+      <p class="h3 p-3">{{ patrocinadorDetail.sponsorship }}</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Correo</th>
+            <th scope="col">Web</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{patrocinadorDetail.contacto.correo}} </td>
+            <td>{{patrocinadorDetail.contacto.web }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </table>
