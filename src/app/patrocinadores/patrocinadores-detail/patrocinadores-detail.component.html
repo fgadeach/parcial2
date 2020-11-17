@@ -23,6 +23,9 @@
           <tr>
             <td>{{patrocinadorDetail.contacto.correo}} </td>
             <td>{{patrocinadorDetail.contacto.web }}</td>
+            <td *ngIf=patrocinadorDetail.contacto.web>
+              <button type="button" class="btn btn-primary" href=patrocinadorDetail.contacto.web>Seguir Link</button>
+            </td>
           </tr>
         </tbody>
       </table>
